@@ -6,7 +6,7 @@ async function bootstrap() {
   const logger = new Logger('MAIN');
   const app = await NestFactory.create(AppModule);
 
-  app.setGlobalPrefix('api/v2');
+  app.setGlobalPrefix('api');
 
   app.useGlobalPipes(
     new ValidationPipe({
