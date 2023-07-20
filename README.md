@@ -39,18 +39,26 @@ yarn install
 
 6. Llenar las variables de entorno definidas en el __.env__
 
-7. Iniciar el Proyecto
+7. Iniciar el contenedor de MongoDB:
+```bash
+docker compose up -d
+``` 
+
+8. Iniciar el Proyecto
 ```bash
 yarn start:dev
 ```
 
 ## Stack Usado
-* Nest JS
+* __Nest JS__
+* __MongoDB__
+* __Docker__
 
 ### Servicios Configurados
 * Instalados y configurados paquetes __ClassValidator__ y __ClassTransformer__
 * Instalado y configurado el paquete __@nestjs/config__ para las variables de entorno
 * Creado ```DTO``` para la validación de la paginación.
+* Creado y configurado modulo de autenticación con __MongoDB__
 
 #### Nota
 * __Por favor configure el proyecto cambiandole el Nombre en el package.json__
